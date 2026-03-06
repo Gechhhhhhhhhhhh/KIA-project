@@ -16,7 +16,7 @@ export const NavBar = () => {
           
           <img src={logo} alt="Logo" className="h-15" />
           </Link>
-          <h1 className='text-primary font-bold'> Kinder Impart Academy</h1>
+          <h1 className='text-primary font-bold'> Kinder Impact Academy</h1>
         </div>
 
         {/* ================= DESKTOP MENU ================= */}
