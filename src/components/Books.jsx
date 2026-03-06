@@ -24,8 +24,49 @@ const faqs = [
   },
   {
     question: "តើមានសៀវភៅសម្លេង (Audiobook) ឬទេ?",
-    answer:
-      "មាន! ដើម្បីមានភាពងាយស្រួល សៀវភៅជាសម្លេងនឹងត្រូវចេញផ្សាយនៅថ្ងៃទី១៥ ខែវិច្ឆិកា ឆ្នាំ២០២៥។ ",
+  answer: (
+    <div className="space-y-2">
+      <p>មាន! យើងរីករាយប្រកាសថា សៀវភៅសំឡេង (Audiobook) ត្រូវបានចេញផ្សាយជាផ្លូវការនៅថ្ងៃទី ១៥ ខែវិច្ឆិកា ឆ្នាំ២០២៥។ នេះមិនមែនត្រឹមតែជាការស្តាប់ធម្មតានោះទេ ប៉ុន្តែគឺជាការវិនិយោគលើខ្លួនឯងតាមរយៈការស្តាប់សំឡេង ក្នុងការបើកចិត្តឱ្យទូលាយ និងទទួលយកបទពិសោធន៍ថ្មីនៃការរៀនសូត្រ!</p>
+      <p> វិធីទិញងាយៗ ៣ជំហាន៖</p>
+    <ul className="space-y-3">
+      
+
+      <li className="">
+        <strong>បង់ប្រាក់: </strong>
+        <a
+          href="https://pay.ababank.com/oRF8/49e0d4q4"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 underline"
+        >
+          https://pay.ababank.com/oRF8/49e0d4q4        </a>
+      </li>
+      <li className="">
+        <strong>បង្ហាញបង្កាន់ដៃ: </strong>
+        <a
+          href="https://t.me/KinderImpactAcademy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 underline"
+        >
+          https://t.me/KinderImpactAcademy     </a>
+      </li>
+      <li className="">
+        <strong>ស្នើរសុំចូលស្តាប់: </strong>
+        <a
+          href="https://t.me/+5bSKA4mH95QxNzI1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 underline"
+        >
+          https://t.me/+5bSKA4mH95QxNzI1        </a>
+      </li>
+   
+     
+
+    </ul>
+    </div>
+  ),
   },
   {
     question: "តើអាចបង់ប្រាក់ដោយវិធីណាខ្លះ?",
@@ -47,6 +88,9 @@ const faqs = [
 
         <li>
           គ្រប់សាខាបណ្ណាគារអន្តរជាតិ (IBC)
+        </li>
+        <li>
+          Tsutaya Bookstore Cambodia (Ground Floor, First floor, Aeon Mall, Samdach Sothearos Blvd (3), Phnom Penh)
         </li>
       </ol>
     </div>
@@ -73,17 +117,7 @@ const faqs = [
         </a>
       </li>
 
-      <li className="">
-        <strong>ទម្រង់៖ </strong>
-        <a
-          href="https://forms.gle/zemJ98eMzZRX3dsJ8"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 underline"
-        >
-          https://forms.gle/zemJ98eMzZRX3dsJ8
-        </a>
-      </li>
+     
 
     </ul>
   ),
@@ -135,7 +169,7 @@ export const Books = () => {
       </div>
     </div>
     <div className="max-w-7xl mx-auto px-6 py-1 ">
-      <h1 className='text-4xl font-bold text-primary mt-5'>Parenting Book </h1>
+      <h1 className='text-4xl font-bold text-primary mt-5'>មាតិកា សៀវភៅរួមមាន៖</h1>
     </div>
      <div className="mt-5">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 md:gap-15  items-center">
@@ -145,8 +179,8 @@ export const Books = () => {
           <div>
          
 
-          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី១ </span>
-        តើអ្នកកំពុងតែស្វែងរកមធ្យោបាយក្នុងការចិញ្ចឹមអប់រំកូនឱ្យបានត្រឹមត្រូវមែនទេ?
+          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី១៖ </span>
+        សេចក្តីផ្តើម និងមូលដ្ឋានគ្រឹះនៃការចិញ្ចឹមអប់រំកូន
           </p>
           <p className="text-primary mb-3 leading-relaxed">
         <ul className='pl-13 space-y-2'>
@@ -163,7 +197,7 @@ export const Books = () => {
           <div>
          
 
-          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី២  </span>
+          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី២៖  </span>
         ចង់ចិញ្ចឹមអប់រំកូនបានល្អត្រូវចាប់ផ្តើមពីខ្លួនឯងសិន
           </p>
           <p className="text-primary mb-3 leading-relaxed">
@@ -181,7 +215,7 @@ export const Books = () => {
           <div>
          
 
-          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៣ </span>
+          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៣៖ </span>
         ការចិញ្ចឹមអប់រំកូនតាមបែបវិជ្ជមាន
           </p>
           <p className="text-primary mb-3 leading-relaxed">
@@ -199,7 +233,7 @@ export const Books = () => {
           <div>
          
 
-          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៤ </span>
+          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៤៖ </span>
         យល់ពីកុមារថាពួកគេមិនមែនជាមនុស្សចាស់ដែលមានរាងកាយតូចទេ
           </p>
           <p className="text-primary mb-3 leading-relaxed">
@@ -215,7 +249,7 @@ export const Books = () => {
           <div>
          
 
-          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៥ </span>
+          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៥៖ </span>
         ជំនាញក្នុងការដោះស្រាយបញ្ហាជាមួយកុមារ
           </p>
           <p className="text-primary mb-3 leading-relaxed">
@@ -233,11 +267,30 @@ export const Books = () => {
 
         {/* Right Side - Content */}
         <div className="space-y-5">
+           <div>
+         
 
+          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៦៖  </span>
+       ជំនាញនិងគុណភាពសំខាន់ៗសម្រាប់ឪពុកម្ដាយ
+          </p>
+          <p className="text-primary mb-3 leading-relaxed">
+        <ul className='pl-13 space-y-2'>
+          <li>មេរៀន១៖ ការសរសើរឬលើកទឹកចិត្តកូន</li>
+          <li>មេរៀន២៖ របៀបចិញ្ចឹមអប់រំកូន (Parenting Style)</li>
+          <li>មេរៀន៣៖ សំឡេងរបស់ឪពុកម្តាយក្នុងចិត្តកូន</li>
+          <li>មេរៀន៤៖ ការទទួលស្គាល់របស់ឪពុកម្តាយចំពោះកូន</li>
+        </ul>
+          </p>
+
+         
+        </div>
+
+        
+       
          <div>
          
 
-          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៦ </span>
+          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៧៖ </span>
        គន្លឹះផ្សេងៗទៀតដែលសំខាន់សម្រាប់ឪពុកម្ដាយ
           </p>
           <p className="text-primary mb-3 leading-relaxed">
@@ -253,24 +306,7 @@ export const Books = () => {
          <div>
          
 
-          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៧  </span>
-       ជំនាញនិងគុណភាពសំខាន់ៗសម្រាប់ឪពុកម្ដាយ
-          </p>
-          <p className="text-primary mb-3 leading-relaxed">
-        <ul className='pl-13 space-y-2'>
-          <li>មេរៀន១៖ ការសរសើរឬលើកទឹកចិត្តកូន</li>
-          <li>មេរៀន២៖ របៀបចិញ្ចឹមអប់រំកូន (Parenting Style)</li>
-          <li>មេរៀន៣៖ សំឡេងរបស់ឪពុកម្តាយក្នុងចិត្តកូន</li>
-          <li>មេរៀន៤៖ ការទទួលស្គាល់របស់ឪពុកម្តាយចំពោះកូន</li>
-        </ul>
-          </p>
-
-         
-        </div>
-         <div>
-         
-
-          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៨ </span>
+          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៨៖ </span>
         ជំនាញនិងគុណភាពសំខាន់ៗសម្រាប់កុមារ
           </p>
           <p className="text-primary mb-3 leading-relaxed">
@@ -295,7 +331,7 @@ export const Books = () => {
          <div>
          
 
-          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៩ </span>
+          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី៩៖ </span>
         ចំណងអាពាហ៍ពិពាហ៍ដើម្បីកូន
           </p>
           <p className="text-primary mb-3 leading-relaxed">
@@ -311,7 +347,7 @@ export const Books = () => {
          <div>
          
 
-          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី១០ </span>
+          <p className="text-primary mb-2 leading-relaxed text-l font-semibold"><span className='text-orange'>ជំពូកទី១០៖ </span>
         បើអាចធ្វើជាឪពុកម្ដាយម្តងទៀត
           </p>
           <p className="text-primary mb-3 leading-relaxed">
@@ -392,7 +428,7 @@ export const Books = () => {
               <div
                 className={`px-6 pb-6 text-gray-600 transition-all duration-300 ${
                   activeIndex === index
-                    ? "max-h-40 opacity-100"
+                    ? "max-h-55 opacity-100"
                     : "max-h-0 opacity-0 overflow-hidden"
                 }`}
               >
