@@ -29,23 +29,30 @@ export const Contact = () => {
             {/* Map Box */}
             <div className="bg-contact/15 text-white p-6 rounded-xl shadow-lg text-center ">
               <MapPin className="mx-auto mb-4 text-white" size={32} />
-            
-              <p>Borey Vimean Phnom Penh (house #31i, St. 209B), Street 598, Chrang Chamres 1, Russey Keo, Phnom Penh, Cambodia</p>
+            <a href="https://maps.app.goo.gl/h2murayb46B1PKha6">
+
+              <p className='hover:underline'>Borey Vimean Phnom Penh (house #31i, St. 209B), Street 598, Chrang Chamres 1, Russey Keo, Phnom Penh, Cambodia</p>
+
+            </a>
             </div>
 
             {/* Phone Box */}
             <div className="bg-contact/15 text-white p-6 rounded-xl shadow-lg text-center">
               <Phone className="mx-auto mb-4 text-white" size={32} />
-         
-              <p>+855 93-500-901</p>
+            <a href="093-500-901">
+
+              <p className='hover:underline' >+855 93-500-901</p>
+            </a>
             </div>
 
             {/* Email Box */}
            
             <div className="bg-contact/15 text-white p-6 rounded-xl shadow-lg text-center ">
               <Mail className="mx-auto mb-4 text-white" size={32} />
-            
-              <p className='break-all'>kinderimpactacademy@gmail.com</p>
+            <a href="kinderimpactacademy@gmail.com">
+
+              <p className='break-all hover:underline'>kinderimpactacademy@gmail.com</p>
+            </a>
             </div>
 
           </div>
