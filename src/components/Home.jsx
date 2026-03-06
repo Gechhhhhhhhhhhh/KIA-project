@@ -48,7 +48,7 @@ export const Home = () => {
                 <p className='text-primary py-5'>We help individuals, teams, and organizations build emotional
                    intelligence, communication excellence, and leadership capability through practical, psychology-based
                    learning experiences designed for real-world results.</p>
-                   <a href="https://t.me/KIAcademy">
+                   <a href="https://t.me/KinderImpactAcademy">
 
 
                 <button className='text-white bg-primary py-2 px-10 rounded-md hover:text-primary hover:bg-white transition border border-primary-3'>Let's Talk</button>
@@ -80,7 +80,7 @@ export const Home = () => {
            
               <div>
                 <p className="text-primary  lg:text-4xl md:text-3xl text-3xl font-bold">
-                    About Company
+                    About
                 </p>
                 <p className='text-primary py-5'>Kinder Impact Academy (KIA) is 
                   a premier Cambodian-owned training, coaching, and consulting organization founded by Mr. Ing Vanni — a psychologist, educator, and entrepreneur with nearly two decades of experience in developing corporate learning and leadership programs. KIA is dedicated to unlocking human potential and driving positive impact 
@@ -105,7 +105,7 @@ export const Home = () => {
             <div className=''>
                <div>
                 <p className="text-primary  lg:text-4xl md:text-3xl text-3xl font-bold">
-                    Our Mission
+                    Mission
                 </p>
                 <p className='text-primary py-5'>we help people unlock their full potential and achieve meaningful, lasting impact through
                    personalized coaching, expert consulting, and dynamic training programs.</p>
@@ -128,7 +128,7 @@ export const Home = () => {
            
               <div className=''>
                 <p className="text-primary mt-5  lg:text-4xl md:text-3xl text-3xl font-bold">
-                    Our Vision  </p>
+                    Vision  </p>
                 <p className='text-primary py-5'>To shape a future where every person grows with purpose 
                   and creates lasting impact through transformative learning experiences.</p>
                  <img
@@ -179,7 +179,7 @@ export const Home = () => {
                <Link
                   to={service.link}
                   className="inline-block
-                  text-primary hover:underline transition "
+                  text-primary underline transition "
                 >
                   Learn More
                 </Link>
