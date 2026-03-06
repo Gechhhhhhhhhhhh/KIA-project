@@ -1,6 +1,10 @@
 import React from 'react'
 import { NavBar } from './NavBar'
 import { Footer } from './Footer'
+import P1 from '../assets/Cons1.jpg'
+import P2 from '../assets/Cons2.jpg'
+import P3 from '../assets/Cons3.jpg'
+import P4 from '../assets/Cons4.jpg'
 export const Consulting = () => {
   return (
     <div>
@@ -18,8 +22,9 @@ export const Consulting = () => {
           guidance, foster growth, and address specific challenges in these key areas.</p>
 
         </div>
+        <div className="flex flex-col md:flex-row gap-10 items-center ">
         <div className=" mt-5">
-          <h1 className='text-2xl'>Company & Functional Competency</h1>
+          <h1 className='text-2xl font-semibold'>Company & Functional Competency</h1>
           <ul className='list-decimal pl-10 mt-5 space-y-2 text-secondary '>
             <li>Service Details:</li>
             <ul className='text-primary list-disc pl-7'>
@@ -95,8 +100,19 @@ export const Consulting = () => {
             </ul>
           </ul>
         </div>
+<div className="md:w-1/2">
+    <img 
+      src={P1}
+      alt="Company Consulting"
+      className="rounded-xl shadow-md w-full object-cover"
+    />
+  </div>
+
+        </div>
+        <div className="flex flex-col md:flex-row gap-10 items-center">
+
         <div className=" mt-5">
-          <h1 className='text-2xl'>Learning & Development Consulting</h1>
+          <h1 className='text-2xl font-semibold'>Learning & Development Consulting</h1>
           <ul className='list-decimal pl-10 mt-5 space-y-2 text-secondary '>
             <li>Service Details:</li>
             <ul className='text-primary list-disc pl-7'>
@@ -130,8 +146,18 @@ export const Consulting = () => {
           </ul>
           
         </div>
+        <div className="md:w-1/2">
+    <img 
+      src={P2}
+      alt="Company Consulting"
+      className="rounded-xl shadow-md w-full object-cover"
+    />
+  </div>
+        </div>
+        <div className="flex flex-col md:flex-row gap-10 items-center">
+
         <div className=" mt-5">
-          <h1 className='text-2xl'>Parenting Consulting</h1>
+          <h1 className='text-2xl font-semibold'>Parenting Consulting</h1>
           <ul className='list-decimal pl-10 mt-5 space-y-2 text-secondary '>
             <li>Service Details:</li>
             <ul className='text-primary list-disc pl-7'>
@@ -163,8 +189,18 @@ export const Consulting = () => {
           </ul>
           
         </div>
+        <div className="md:w-1/2">
+    <img 
+      src={P3}
+      alt="Company Consulting"
+      className="rounded-xl shadow-md w-full object-cover"
+    />
+  </div>
+        </div>
+        <div className="flex flex-col md:flex-row gap-10 items-center">
+
         <div className=" mt-5">
-          <h1 className='text-2xl'>Early Childhood Education</h1>
+          <h1 className='text-2xl font-semibold'>Early Childhood Education</h1>
           <ul className='list-decimal pl-10 mt-5 space-y-4 text-secondary '>
             <li>Service Details:</li>
             <ul className='text-primary list-disc pl-7 space-y-2'>
@@ -204,6 +240,14 @@ Offer strategic insights and actionable plans for scaling operations through fra
           </ul>
           
         </div>
+        </div>
+        <div className="flex justify-center max-w-7xl mx-auto px-6 mt-10">
+  <img 
+    src={P4}
+    alt="Company Consulting"
+    className="rounded-xl shadow-md w-1/3 object-cover"
+  />
+</div>
       </div>
       <Footer/>
     </div>
