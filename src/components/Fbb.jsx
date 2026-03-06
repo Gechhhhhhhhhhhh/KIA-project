@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     name: "- Dr. Jeanette Coufal",
-    position: "Coach",
+    position: "Professor Emeritus, USA",
     text: "You have achieved a lot professionally and I know you to be a person of compassion and integrity. I think you are right that fostering the positive development of people is “where it’s at.",
   },
   {
@@ -54,7 +54,7 @@ const testimonials = [
   {
     name: "- Sovathara Som",
     position: "Brand and Corporate Affairs, Chevron",
-    text: "“Vanni has been developing himself very well and have become a very good role model to many people. His positive personality has impacted positively to people around him, and he always see the best in people. Vanni is a good listener, a good trainer, a good coach, and good counselor. Whatever project under Vanni’s responsibility, he always ensure the best results. Vanni always pay attention to detail. I highly recommend Vanni to whoever or any organization that require his services.” ",
+    text: "Vanni has been developing himself very well and have become a very good role model to many people. His positive personality has impacted positively to people around him, and he always see the best in people. Vanni is a good listener, a good trainer, a good coach, and good counselor. Whatever project under Vanni’s responsibility, he always ensure the best results. Vanni always pay attention to detail. I highly recommend Vanni to whoever or any organization that require his services.",
   },
   {
     name: "- Sou PRUM",
@@ -113,7 +113,7 @@ const testimonials = [
   },
   {
     name: "- Chhin Somalin",
-    position: "Assistant Manager Sdach Prey",
+    position: "Assistant Manager, Sdach Prey",
     text: "My heartfelt gratitude to Mr. Vanni for his time and invaluable wisdom. His advice— 'Know Yourself, Be Happy, Be Open-minded, Be Possible, and enjoy the process' will serve as a guiding map as I strive to inspire others on my Adventurous journey. This session has been pivotal for my growth; it’s like a one light switch on button that lights up my path and I look forward to implementing what I’ve learned from this moment onward.",
   },
   {
@@ -179,13 +179,26 @@ const testimonials = [
 ]
 
 export const Fbb = () => {
-  const [current, setCurrent] = useState(0)
+
+  const sliderRef = useRef(null)
   const intervalRef = useRef(null)
 
   const startSlider = () => {
     intervalRef.current = setInterval(() => {
-      setCurrent(prev => (prev + 1) % testimonials.length)
-    }, 5000)
+
+      const slider = sliderRef.current
+      if (!slider) return
+
+      const width = slider.clientWidth
+
+      if (slider.scrollLeft + width >= slider.scrollWidth - 5) {
+        // jump to first card
+        slider.scrollTo({ left: 0, behavior: "auto" })
+      } else {
+        slider.scrollBy({ left: width, behavior: "smooth" })
+      }
+
+    }, 10000)
   }
 
   const stopSlider = () => {
@@ -199,30 +212,51 @@ export const Fbb = () => {
 
   return (
     <section className="bg-gray-50 py-16">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-4xl font-semibold text-primary text-center mb-12">What People Say</h2>
+
+      <div className="max-w-5xl mx-auto px-6">
+
+        <h2 className="text-4xl font-semibold text-primary text-center mb-12">
+          What People Say
+        </h2>
 
         <div
-          className="relative overflow-hidden"
+          ref={sliderRef}
           onMouseEnter={stopSlider}
           onMouseLeave={startSlider}
+          className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth"
         >
+
           {testimonials.map((t, idx) => (
+
             <div
               key={idx}
-              className={`transition-transform duration-700 ease-in-out ${
-                idx === current ? "translate-x-0" : "translate-x-full absolute top-0 left-0 w-full"
-              }`}
+              className="min-w-full snap-center px-4"
             >
-              <div className="bg-white p-8 rounded-2xl  text-center">
-                <p className="text-gray-700 mb-4 italic">"{t.text}"</p>
-                <h3 className="text-xl font-semibold">{t.name}</h3>
-                <p className="text-sm text-gray-500">{t.position}</p>
+
+              <div className="bg-white p-10 rounded-2xl shadow-md text-center">
+
+                <p className="text-gray-700 mb-6 italic">
+                  "{t.text}"
+                </p>
+
+                <h3 className="text-xl font-semibold">
+                  {t.name}
+                </h3>
+
+                <p className="text-sm text-gray-500">
+                  {t.position}
+                </p>
+
               </div>
+
             </div>
+
           ))}
+
         </div>
+
       </div>
+
     </section>
   )
 }
